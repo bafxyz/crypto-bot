@@ -1,0 +1,31 @@
+/* Default layout */
+.Layout {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: var(--header-height) auto var(--footer-height);
+  grid-template-areas: 'header' 'content' 'footer';
+}
+
+.Layout-header {
+  grid-area: header;
+  height: var(--header-height);
+}
+
+.Layout-content {
+  grid-area: content;
+}
+
+.Layout-footer {
+  grid-area: footer;
+  min-height: var(--footer-height);
+}
+
+/* In this layout header and content starts from same top position. This could be helpful if header have some transparency */
+.Layout--top-content .Layout-header {
+  z-index: 1;
+}
+
+.Layout--top-content .Layout-content {
+  grid-row: 1 / 3;
+  z-index: 0;
+}

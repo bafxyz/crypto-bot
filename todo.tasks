@@ -1,0 +1,6 @@
+☐ Sidebar for menu
+☐ Create react routes
+/ - has basic info regarding coinmarketcap and menu to choose market (bitstamp/bittrex/binance)
+/bitstamp - has (btc/bth/eth/xrp) table with posibility to create alert for special price
+/bittrex
+☐ Create backend

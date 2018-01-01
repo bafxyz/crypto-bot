@@ -1,0 +1,47 @@
+.Button {
+  border: 0;
+  cursor: pointer;
+  font-size: var(--Button-font-size);
+  line-height: var(--Button-line-height);
+  padding: var(--Button-padding);
+  text-transform: uppercase;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.--primary {
+  background-color: var(--Button-primary-bg);
+  color: var(--Button-primary-color);
+  outline: var(--Button-primary-outline);
+
+  &:hover {
+    background-color: var(--Button-primary-bg-hover);
+  }
+}
+
+.--secondary {
+  background-color: var(--Button-secondary-bg);
+  color: var(--Button-secondary-color);
+  outline: var(--Button-secondary-outline);
+
+  &:hover {
+    background-color: var(--Button-secondary-bg-hover);
+  }
+}
+
+.--disabled {
+  background-color: var(--Button-disabled-bg);
+  color: var(--Button-disabled-color);
+  cursor: default;
+  outline: var(--Button-disabled-outline);
+
+  &:hover {
+    background-color: var(--Button-disabled-bg-hover);
+  }
+}
+
+.--rounded {
+  border-radius: var(--Button-border-radius);
+}

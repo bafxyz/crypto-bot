@@ -1,0 +1,24 @@
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:jsx-a11y/recommended
+plugins: [ babel, react, jsx-a11y ]
+parserOptions:
+  ecmaVersion: 8
+  sourceType: module
+  ecmaFeatures:
+    impliedStrict: true
+    experimentalObjectRestSpread: true
+env:
+  browser: true
+  node: true
+  commonjs: true
+  shared-node-browser: true
+  es6: true
+  mocha: true
+
+rules:
+  # eslint
+  valid-jsdoc: 2
+  require-jsdoc: [ 2, { require: { FunctionDeclaration: true, MethodDefinition: true, ClassDeclaration: true } } ]
+  no-console: [1]

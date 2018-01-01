@@ -1,0 +1,25 @@
+.Slider {
+  background: var(--Slider-bg);
+  padding: var(--Slider-padding);
+  position: relative;
+}
+
+.Slider-nav-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Slider-nav {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.Slider-nav--left {
+  content: '<';
+}
+
+.Slider-nav--right {
+  content: '>';
+}

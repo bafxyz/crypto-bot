@@ -1,0 +1,11 @@
+html {
+  background-color: var(--root-bg);
+  color: var(--root-color);
+  font-family: var(--root-font-family);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
